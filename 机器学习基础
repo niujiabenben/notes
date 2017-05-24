@@ -1,2 +1,6 @@
 ** 通常权重衰减的计算并不使用偏置项。一般来说，将偏置项包含在权重衰减项中只会对最终的神经网络产生很小的影响。
    http://ufldl.stanford.edu/wiki/index.php/%E5%8F%8D%E5%90%91%E4%BC%A0%E5%AF%BC%E7%AE%97%E6%B3%95
+   
+** 《ON LARGE-BATCH TRAINING FOR DEEP LEARNING: GENERALIZATION GAP AND SHARP MINIMA》，当选 ICLR 2017的oral paper。
+   文章描述了在传统神经网络训练时，大的 batch size（如，超过512）会导致网络模型泛化能力下降的问题，并通过实验证明其原因是泛化误差和尖锐收敛，
+   并提出了一些解决方案。
