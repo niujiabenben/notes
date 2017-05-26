@@ -4,3 +4,6 @@
 ** 《ON LARGE-BATCH TRAINING FOR DEEP LEARNING: GENERALIZATION GAP AND SHARP MINIMA》，当选 ICLR 2017的oral paper。
    文章描述了在传统神经网络训练时，大的 batch size（如，超过512）会导致网络模型泛化能力下降的问题，并通过实验证明其原因是泛化误差和尖锐收敛，
    并提出了一些解决方案。
+
+** Compared to earlier eras, we still talk about bias and variance, but somewhat less about the “tradeoff” between them. 
+   Andrew Ng, NIPS2016. https://media.nips.cc/Conferences/2016/Slides/6203-Slides.pdf
