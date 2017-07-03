@@ -7,3 +7,11 @@
 
 ** Compared to earlier eras, we still talk about bias and variance, but somewhat less about the “tradeoff” between them. 
    Andrew Ng, NIPS2016. https://media.nips.cc/Conferences/2016/Slides/6203-Slides.pdf
+
+** NUMERICAL DIFFERENTIATION: 数值微分方法：(f(x+h)-f(x-h))/(2h)，当变量数量较多时，这种方法的计算代价很大（一个变量需要求两次函数值，
+   在神经网络中对应两次前向），并且有误差(式子中h趋向于0是才是精确值，但计算时h不等于0)。
+   SYMBOLIC DIFFERENTIATION: 符号微分方法，通过微分的链式法则，对一个函数进行符号求导。这种方法可以得到导数的符号表达式，但是往往表达式及其复杂，
+   具有很多重复的部分，而在计算导数的过程中，这些重复的部分会被重复计算，会带来额外的计算开销。
+   https://en.wikipedia.org/wiki/Automatic_differentiation
+   http://alexey.radul.name/ideas/2013/introduction-to-automatic-differentiation/
+   这里所谓的自动微分还是比较复杂的，不如caffe中导数的链式法则来得直观。
