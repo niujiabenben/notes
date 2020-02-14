@@ -5,6 +5,8 @@
 椭圆方程: $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$.
 $\left\{\begin{array}{l}{x=a \cos \alpha} \\ {y=b \sin \alpha}\end{array}\right.$
 
+$\left\{\begin{matrix} x=a \cos \alpha \\ x=a \cos \alpha \end{matrix}\right.$
+
 整个椭圆的面积为第一象限面积的4倍:
 
 $S = 4\int_{0}^{a} ydx
