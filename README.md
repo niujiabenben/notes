@@ -1,68 +1,9 @@
-## 微积分
-
-**极限**
-
-对于任意给定的正数 $\epsilon>0$, 存在正数 $\delta>0$, 使得当 $x \in (x_0-\delta, x_0) \cup(x_0,x_0+\delta)$ 时, 总有 $|f(x)-A|<\epsilon$ 成立, 则称函数 $f(x)$ 在 $x \rightarrow x_0$ 时的极限为 $A$, 记为: $\lim_{x \rightarrow x_0} f(x)=A$.
-
-上述定义中, 将 $x$ 的范围限制在 $x \in (x_0-\delta, x_0)$, 则得到左极限: $\lim_{x \rightarrow x_0^-} f(x)=A$; 将$x$ 的范围限制在 $x \in (x_0, x_0+\delta)$, 则得到右极限: $\lim_{x \rightarrow x_0^+} f(x)=A$.
-
-注意上述定义中, 不需要函数 $f(x)$ 在 $x_0$ 处有定义. 所取的范围为 $x_0$ 的去心邻域.
-
-从以上的定义中可知, 函数 $f(x)$ 在点 $x_0$ 处的极限存在的充要条件是左右极限存在且相等: $\lim_{x \rightarrow x_0^-} f(x)=\lim_{x \rightarrow x_0^+} f(x)=A$.
-
-**连续**
-
-连续的定义是极限等于函数值: $\lim_{x \rightarrow x_0} f(x)=f(x_0)$.
-
-这就要求函数 $f(x)$ 在 $x_0$ 处的极限存在, 且 $f(x)$ 在 $x_0$ 处有定义.
-
-**无穷小**
-
-若 $\lim_{x \rightarrow x_0} f(x)=0$, 我们就称 $f(x)$ 为 $x \rightarrow x_0$ 时的无穷小. 由此可知, 无穷小是变量.
-
-若 $f(x)$ 和 $g(x)$ 均为 $x \rightarrow x_0$ 时的无穷小, 考察极限: $\lim_{x \rightarrow x_0} \frac {f(x)}{g(x)}=C$:
-
-* 若 $C=0$, 则称 $f(x)$ 为 $g(x)$ 的高阶无穷小;
-* 若 $C=\infty$, 则称 $f(x)$ 为 $g(x)$ 的低阶无穷小;
-* 若 $C \ne 0$ 且 $C \ne \infty$, 则称 $f(x)$ 为 $g(x)$ 的同阶无穷小;
-* 若 $C = 1$, 则称 $f(x)$ 为 $g(x)$ 的等价无穷小;
-
-**导数**
-
-如果函数 $f(x)$ 在 $x_0$ 的邻域内有定义, $\Delta x$ 为自变量 $x$ 在 $x_0$ 处的增量, 如果如下极限存在: $\lim_{\Delta x \rightarrow 0} \frac{f\left(x_{0}+\Delta x\right)-f\left(x_{0}\right)}{\Delta x}$, 则称 $f(x)$ 在 $x_0$ 处可导, 极限值即为 $f(x)$ 在 $x_0$ 处的导数, 记为 $f'(x_0)$.
-
-可导必连续, 连续不必可导.
-
-**微分**
-
-函数 $f(x)$ 在某区间内有定义, 如果 $x_0$ 和 $x_0 + \Delta x$ 在定义域内, 且函数增量 $\Delta y=f(x_0 + \Delta x) - f(x_0)$ 可表示为 $\Delta y=A \Delta x + o(\Delta x)$, 其中 $A$ 是不依赖 $\Delta x$ 的常数, 那么称 $f(x)$ 在 $x_0$ 处是可微的, $A \Delta x$ 叫做函数 $f(x)$ 在点 $x_0$ 处的微分, 记为: $dy=A \Delta x$.
-
-根据以上定义, 自变量 $x$ 的微分为 $dx=1*\Delta x=\Delta x$, 所以 $dy=Adx=f'(x)dx$.
-
-由以上定义可知, 微分的几何意义是在 $x_0$ 的邻域中用切线代替函数 $f(x)$.
-
-对于一元函数来说, 可导与可微等价.
-
-**原函数与不定积分**
-
-在区间 $I$ 上可导函数 $F(x)$ 的导函数为 $f(x)$, 则称 $F(x)$ 为 $f(x)$ 在区间 $I$ 上的原函数. $\int f(x)dx=F(x)+C$ 为 $f(x)$ 的不定积分.
-
-原函数存在定理: 连续函数一定有原函数.
-
-这个定理指出, 连续函数必定可积(不定积分意义上的), 但不一定可导(魏尔施特拉斯函数处处连续, 但处处不可导).
-
-定积分的定义较为繁琐, 这里不写.
-
-**偏导数**
-
-给定函数 $z=f(x,y)$, 若 $g(x,y)=\frac{\partial^{2} z}{\partial y \partial x}$ 和 $h(x,y)=\frac{\partial^{2} z}{\partial x \partial y}$ 都连续, 则两者相等.
-
 ## 应用
 
 **椭圆**
 
 椭圆方程: $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$.
-参数方程: $\left\{\begin{array}{l}{x=a \cos \alpha} \\ {y=b \sin \alpha}\end{array}\right. %%$
+参数方程: $\left\{\begin{array}{l}{x=a \cos \alpha} \\ {y=b \sin \alpha}\end{array}\right.  %%$
 
 整个椭圆的面积为第一象限面积的4倍:
 
