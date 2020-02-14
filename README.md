@@ -29,3 +29,5 @@ SVM的核心是要最大化support vector到分类平面的距离.
 直接计算距离的平方):
 
 7. $\left \| X - X' \right \| = \frac{(WX'+B)^2}{\|W\|^2}$
+
+$\lim_{x \rightarrow x_0} f(x)=A$
