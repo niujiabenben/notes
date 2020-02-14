@@ -3,7 +3,7 @@
 **椭圆**
 
 椭圆方程: $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$.
-参数方程: ${ \begin{array}{l}{x=a \cos \alpha} \\ {y=b \sin \alpha}\end{array}$
+$\left\{\begin{array}{l}{x=a \cos \alpha} \\ {y=b \sin \alpha}\end{array}\right.$
 
 整个椭圆的面积为第一象限面积的4倍:
 
